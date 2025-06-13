@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Passport Seva Portal">
+  <meta name="keywords" content="passport, seva, portal, india">
+  <meta name="author" content="Govt. of India">
+  <title>Passport Seva Portal</title>
+  <base href="https://www.passportindia.gov.in/" target="_blank">
+</head>
+
+<body>
+  <header>
+    <center>
+    <h1>Passport Seva Portal</h1>
+    </center>
+    <body>
+      <center>
+  <img src="https://content.jdmagicbox.com/v2/comp/hyderabad/y2/040pxx40.xx40.111128140550.l7y2/catalogue/passport-seva-kendra-ameerpet-hyderabad-central-government-3qdw3jqhar.jpg" width="50%" height="500">
+  </center>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#apply">Apply</a></li>
+        <li><a href="#status">Check Status</a></li>
+        <li><a href="#verification">Verification Centres</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <center>
+    <section id="home">
+      <h2>Welcome to the Passport Seva Portal</h2>
+      <p><strong>This portal</strong> provides services related to passport application and issuance.</p>
+      <aside>
+        <p><em>Note:</em> Please keep your original documents ready during your appointment.</p>
+      </aside>
+    </section>
+
+    <section id="apply"></center>
+  <h2>Apply for Passport</h2>
+  <form action="/submit-application" method="post">
+    <fieldset>
+      <legend>Applicant Information</legend>
+
+      <label for="applicantName">Applicant's Name:</label>
+      <input type="text" id="applicantName" name="applicantName" required><br>
+
+      <label for="dob">Date of Birth (DD/MM/YYYY):</label>
+      <input type="date" id="dob" name="dob" required><br>
+
+      <label for="birthPlace">Place of Birth (Village/Town/City):</label>
+      <input type="text" id="birthPlace" name="birthPlace"><br>
+
+      <label for="district">District:</label>
+      <input type="text" id="district" name="district"><br>
+
+      <label for="state">State/UT:</label>
+      <input type="text" id="state" name="state"><br>
+
+      <label for="region">Region/Country:</label>
+      <input type="text" id="region" name="region"><br>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select><br>
+
+      <label for="marital">Marital Status:</label>
+      <input type="text" id="marital" name="marital"><br>
+
+      <label for="citizenship">Citizenship of India by:</label>
+      <input type="text" id="citizenship" name="citizenship"><br>
+
+      <label for="pan">PAN:</label>
+      <input type="text" id="pan" name="pan"><br>
+
+      <label for="voterId">Voter ID:</label>
+      <input type="text" id="voterId" name="voterId"><br>
+
+      <label for="employment">Employment Type:</label>
+      <input type="text" id="employment" name="employment"><br>
+
+      <label for="govtServant">Is parent/spouse a govt. servant?</label>
+      <input type="text" id="govtServant" name="govtServant"><br>
+
+      <label for="education">Educational Qualification:</label>
+      <input type="text" id="education" name="education"><br>
+
+      <label for="nonEcr">Are you eligible for Non-ECR category?</label>
+      <input type="text" id="nonEcr" name="nonEcr"><br>
+
+      <label for="mark">Visible Distinguishing Mark:</label>
+      <input type="text" id="mark" name="mark"><br>
+
+      <label for="aadhaar">Aadhaar Number:</label>
+      <input type="text" id="aadhaar" name="aadhaar"><br>
+
+      <label for="photo">Upload Photo:</label>
+      <input type="file" id="photo" name="photo"><br>
+
+      <label for="signature">Upload Signature/Thumb Impression:</label>
+      <input type="file" id="signature" name="signature"><br>
+    </fieldset><br>
+
+    <fieldset>
+      <legend>Family Details</legend>
+      <label for="father">Father's Name:</label>
+      <input type="text" id="father" name="father"><br>
+
+      <label for="mother">Mother's Name:</label>
+      <input type="text" id="mother" name="mother"><br>
+    </fieldset><br>
+
+    <fieldset>
+      <legend>Present Residential Address</legend>
+      <label for="presentAddress">Address:</label>
+      <textarea id="presentAddress" name="presentAddress"></textarea><br>
+
+      <label for="presentPin">Pin:</label>
+      <input type="text" id="presentPin" name="presentPin"><br>
+
+      <label for="presentPhone">Mobile/Tel No:</label>
+      <input type="text" id="presentPhone" name="presentPhone"><br>
+
+      <label for="presentEmail">Email:</label>
+      <input type="email" id="presentEmail" name="presentEmail"><br>
+    </fieldset><br>
+
+    <fieldset>
+      <legend>Permanent Residential Address</legend>
+      <label for="permAddress">Address:</label>
+      <textarea id="permAddress" name="permAddress"></textarea><br>
+
+      <label for="permPin">Pin:</label>
+      <input type="text" id="permPin" name="permPin"><br>
+
+      <label for="permPhone">Mobile/Tel No:</label>
+      <input type="text" id="permPhone" name="permPhone"><br>
+    </fieldset><br>
+
+    <fieldset>
+      <legend>Emergency Contact</legend>
+      <label for="emergencyName">Name and Address:</label>
+      <textarea id="emergencyName" name="emergencyName"></textarea><br>
+
+      <label for="emergencyPhone">Mobile/Tel No.:</label>
+      <input type="text" id="emergencyPhone" name="emergencyPhone"><br>
+
+      <label for="emergencyEmail">Email:</label>
+      <input type="email" id="emergencyEmail" name="emergencyEmail"><br>
+    </fieldset><br>
+    <fieldset>
+  <legend>Applicant Information</legend>
+  <!-- applicant input fields -->
+
+  <p><strong>Upload Address Proof Documents (Mandatory):</strong></p>
+
+  <label for="uploadAadhaar">Aadhaar Card (as address proof):</label>
+  <input type="file" id="uploadAadhaar" name="uploadAadhaar" accept="application/pdf,image/*" required><br>
+
+  <label for="uploadPAN">PAN Card (as address proof):</label>
+  <input type="file" id="uploadPAN" name="uploadPAN" accept="application/pdf,image/*" required><br>
+
+  <label for="uploadVoterId">Voter ID (as address proof):</label>
+  <input type="file" id="uploadVoterId" name="uploadVoterId" accept="application/pdf,image/*" required><br>
+</fieldset><br>
+
+
+    <input type="submit" value="Submit Application">
+    <button type="button" onclick="previewApplication()">Preview</button>
+    <input type="reset" value="Reset">
+  </form>
+</section>
+<br><br><br>
+<section id="payment">
+      <h2>Payment Method</h2>
+      <form action="/make-payment" method="post">
+        <label for="paymentMethod">Select Payment Method:</label>
+        <select id="paymentMethod" name="paymentMethod" required>
+          <option value="credit">Credit Card</option>
+          <option value="debit">Debit Card</option>
+          <option value="netbanking">Net Banking</option>
+          <option value="upi">UPI</option>
+        </select><br>
+
+        <label for="paymentAmount">Amount (INR):</label>
+        <input type="number" id="paymentAmount" name="paymentAmount" required><br>
+
+        <label for="transactionId">Transaction Reference ID:</label>
+        <input type="text" id="transactionId" name="transactionId"><br>
+
+        <input type="submit" value="Make Payment">
+      </form>
+    </section><br><br><br>
+
+    <section id="status">
+      <h2>Check Application Status</h2>
+      <details>
+        <summary>Click to check your application status</summary>
+        <form action="/check-status" method="get">
+          <label for="appno">Application Number:</label>
+          <input type="text" id="appno" name="appno">
+          <input type="submit" value="Check Status">
+        </form>
+      </details>
+    </section><br><br><br>
+
+    <section id="payment-status">
+      <h2>Track Payment Status</h2>
+      <details>
+        <summary>Click to track your payment status</summary>
+        <form action="/track-payment" method="get">
+          <label for="paymentRef">Payment Reference ID:</label>
+          <input type="text" id="paymentRef" name="paymentRef" required><br>
+
+          <input type="submit" value="Track Payment">
+        </form>
+      </details>
+    </section><br><br><br>
+    
+    <section id="verification">
+      <h2>Passport Verification Centre - Appointment Availability</h2>
+      <table border="1" cellpadding="17">
+        <caption>Hyderabad Regional Centres - Appointment Slots</caption>
+        <thead>
+          <tr>
+            <th>Centre Name</th>
+            <th>Area</th>
+            <th>Date</th>
+            <th>Available Slots</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Begumpet PSK</td>
+            <td>Begumpet</td>
+            <td>2025-06-15</td>
+            <td>12</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <td>Ameerpet POPSK</td>
+            <td>Ameerpet</td>
+            <td>2025-06-16</td>
+            <td>5</td>
+            <td>Limited</td>
+          </tr>
+          <tr>
+            <td>Madhapur POPSK</td>
+            <td>Madhapur</td>
+            <td>2025-06-15</td>
+            <td>0</td>
+            <td>Full</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Please <a href="#apply">apply online</a> and choose your nearest centre to Schedule an appointment.</p>
+      <div style="margin-top: 1em;">
+        <button onclick="location.href='/schedule-appointment'">Schedule Appointment</button>
+        <button onclick="location.href='/reschedule-appointment'">Reschedule Appointment</button>
+        <button onclick="location.href='/cancel-appointment'">Cancel Appointment</button>
+      </div>
+    </section><br><br><br>
+
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <dl>
+        <dt>How long does it take to receive a passport?</dt>
+        <dd>Typically within 7-10 working days.</dd>
+
+        <dt>What documents are required?</dt>
+        <dd>Proof of identity, address, and date of birth.</dd>
+      </dl>
+    </section><br><br><br>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <figure>
+        <img src="passport-office.jpg" alt="Passport Office" width="300">
+        <figcaption>Regional Passport Office</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <address>
+      Passport Seva Kendra,<br>
+      Ministry of External Affairs,<br>
+      Government of India<br>
+      Email: <a href="mailto:support@passportindia.gov.in">support@passportindia.gov.in</a>
+    </address>
+    <p>&copy; <time datetime="2025">2025</time> Passport Seva Portal. All rights reserved.</p>
+    <progress value="80" max="100"></progress> Service Completion Status
+    <br>
+    <meter value="0.9">System Load</meter>
+  </footer>
+
+  <template id="acknowledgement">
+    <p>Your form has been received. Thank you!</p>
+  </template>
+  <center>
+  <iframe src="https://www.passportindia.gov.in" title="Passport Portal" width="300" height="200"></iframe>
+  </center>
+</body>
+
+</html>
